@@ -1,0 +1,29 @@
+{
+  "name": "ask-the-audience",
+  "version": "1.0.0",
+  "description": "Websockets workshop tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bethsecor/ask-the-audience.git"
+  },
+  "keywords": [
+    "node",
+    "websockets"
+  ],
+  "author": "Beth Secor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bethsecor/ask-the-audience/issues"
+  },
+  "homepage": "https://github.com/bethsecor/ask-the-audience#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "lodash": "^4.11.1",
+    "socket.io": "^1.4.5"
+  }
+}
