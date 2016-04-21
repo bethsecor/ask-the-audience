@@ -20,6 +20,16 @@ for (var i = 0; i < buttons.length; i++) {
   });
 }
 
+var results = document.getElementById('results');
+
 socket.on('voteCount', function (votes) {
   console.log(votes);
+  $('#results').empty();
+  for (var option in votes){
+    $('#results').append('<p>' + option + ': ' + votes[option] + '<p>');
+  }
+});
+
+socket.on('voteRecorded', function (message) {
+  $('#selection').empty().append('<p>' + message + '<p>');
 });
