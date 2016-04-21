@@ -4,7 +4,7 @@
   "description": "Websockets workshop tutorial",
   "main": "server.js",
   "scripts": {
-    "test": "test",
+    "test": "mocha",
     "start": "node server.js"
   },
   "repository": {
@@ -26,5 +26,9 @@
     "jquery": "^2.2.3",
     "lodash": "^4.11.1",
     "socket.io": "^1.4.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
